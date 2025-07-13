@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node createFunctionsFrom.js -f /Users/mascott/gateaccess/agaapi/src/v1.0/volunteers/volunteers.controller.js"
+    "start": "node createFunctionsFrom.js -f /Users/mascott/gateaccess/agaapi/src/v1.0/volunteers/volunteers.controller.js",
+    "diagram": "node diagram-generator.js"
   },
   "keywords": [],
   "author": "",
