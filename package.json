@@ -1,21 +1,22 @@
 {
-  "name": "file-splitter",
+  "name": "dead-code-detector",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AST-based dead code detection for TypeScript/JavaScript",
+  "type": "module",
+  "main": "detect.ts",
   "scripts": {
-    "start": "node createFunctionsFrom.js -f /Users/mascott/gateaccess/agaapi/src/v1.0/volunteers/volunteers.controller.js"
+    "detect": "bun run detect.ts",
+    "test": "bun run detect.ts ."
   },
-  "keywords": [],
+  "keywords": ["dead-code", "ast", "typescript", "javascript"],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/generator": "^7.22.15",
-    "@babel/parser": "^7.22.15",
-    "@babel/traverse": "^7.22.15",
-    "@babel/types": "^7.22.15",
-    "acorn": "^8.10.0",
-    "acorn-walk": "^8.2.0",
-    "commander": "^11.0.0"
+    "@ast-grep/napi": "^0.20.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "bun-types": "^1.0.0"
   }
 }
